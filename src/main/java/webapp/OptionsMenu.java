@@ -34,6 +34,10 @@ public class OptionsMenu {
                     addTask();
                     break;
 
+                case "2":
+                    findTask();
+                    break;
+
             }
         } while (!option.equals("6"));
     }
@@ -49,6 +53,23 @@ public class OptionsMenu {
         catalogTasks.add(task);
     }
 
+    public void findTask() {
+        boolean found = false;
+        System.out.print("Search by titile: ");
+        String titulo = Scanner.nextLine();
+        for (Task task : catalogTasks) {
+            if (task.getTitle().contains(titulo)) {
+                System.out.println("Libro encontrado");
+                System.out.println(task.getTitle());
+                System.out.println(task.getDescription());
+                System.out.println(task.getLocation());
+                found = true;
+            }
+        }
+
+        if (!found)
+            System.out.println("No se ha encontrado ningún libro");
+    }
 
 
 
