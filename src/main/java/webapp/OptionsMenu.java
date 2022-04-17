@@ -15,7 +15,7 @@ public class OptionsMenu {
     }
 
     public void mostrarMenu() {
-
+        //generateTaskList();
         String option = null;
 
         do {
@@ -46,6 +46,9 @@ public class OptionsMenu {
                     modifyTask();
                     break;
 
+                case "5":
+                    showTaskList();
+                    break;
             }
         } while (!option.equals("6"));
     }
@@ -114,6 +117,13 @@ public class OptionsMenu {
 
     }
 
+    public void showTaskList() {
+        for (Task task : catalogTasks) {
+            System.out.println(task.getTitle());
+            System.out.println(task.getDescription());
+            System.out.println(task.getLocation());
+        }
+    }
 
 
 }
