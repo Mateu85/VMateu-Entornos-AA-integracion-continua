@@ -42,6 +42,10 @@ public class OptionsMenu {
                     deleteTask();
                     break;
 
+                case "4":
+                    modifyTask();
+                    break;
+
             }
         } while (!option.equals("6"));
     }
@@ -83,6 +87,31 @@ public class OptionsMenu {
             System.out.println("Libro eliminado correctamente");
         else
             System.out.println("No se ha podido eliminar. El libro no existe");
+    }
+
+    public void modifyTask() {
+        boolean modified = false;
+        System.out.print("Titulo del libro a modificar: ");
+        String titulo = Scanner.nextLine();
+        for (Task task : catalogTasks) {
+            if (task.getTitle().equalsIgnoreCase(titulo)) {
+                System.out.print("Nuevo Título: ");
+                String nuevoTitulo = Scanner.nextLine();
+                System.out.print("Nuevo Autor: ");
+                String nuevoAutor = Scanner.nextLine();
+                System.out.print("Nueva Editorial: ");
+                String nuevaEditorial = Scanner.nextLine();
+                task.setTitle(nuevoTitulo);
+                task.setDescription(nuevoAutor);
+                task.setLocation(nuevaEditorial);
+                System.out.println("Libro modificado correctamente");
+                modified = true;
+            }
+        }
+
+        if (!modified)
+            System.out.println("No se ha encontrado el libro");
+
     }
 
 
