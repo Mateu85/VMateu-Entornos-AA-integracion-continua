@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+## Entornos de Desarrollo - Integración continua
 
-You can use the [editor on GitHub](https://github.com/Mateu85/VMateu-Entornos-AA-integracion-continua/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+En esta Actividad de Aprendizaje consiste en el desarrollo de una aplicación sencilla orientada a objetos sobre la que practicaremos la integración continua.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+-    Almacenando el código en un repositorio en  **GitHub**, trabajando con el modelo  **Git Flow** , **Ramas master y develop** y Configuracion del fichero **README_md**
+    
+- Repositorio GitHub + GitFlow + Master + Develop + README.
+    
+-  Proyecto JAVA con Features fusionadas con develop mediante Pull Request
 
-### Markdown
+- Proyecto Java =>  OPTION MENU
+-- Type your Option: 
+1. Add Task.
+2. Search a Task.
+3. Delete a Task.
+4. Modify a Task.
+5. Look up the list of Tasks.
+6. EXIT
+    
+- Este proyecto se ejecutará en una aplicación orientada a objetos **JAVA** compuesta de al menos 3 clases y donde cada una de esas clases tendrá al menos 5 atributos con, al menos, un constructor y sus correspondientes getters y setterS Y una clase Menu con un listado de acciones 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Configuracion de un job en Jenkins para obtener el código del proyecto del repositorio y que se compile y empaquete el proyecto.
 
-```markdown
-Syntax highlighted code block
+- Se ha añadido la configuración necesaria para que el código del proyecto sea analizado por un SonarQube.
+- Instalacion de VisualVM  para la  monitorizacion  del rendimiento y el uso de memoria de la aplicación
+- Se ha añadido un  release del proyecto al repositorio para que los usuarios puedan
+descargarse la aplicación para usarla directamente
+- [GitHub Pages Template](https://mateu85.github.io/VMateu-Entornos-AA-integracion-continua/)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Aplicación  HandyPerson 
 
-1. Numbered
-2. List
+Este proyecto se basa en una aplicación web diseñada para encontrar solución a las pequeñas averías y trabajos puntuales que necesitamos en nuestro hogares. Se espera que dese esta plataforma se puedan inscribir usuarios que necesite un alguien capaz de realizar esta tarea, al igual que también hayan **HandyPeople** que este dispuestos a realizar estas tareas que en muchos casos no son atendidas por los profesionales que a menudo no se pueden comprometer a realizarlas debido a su volumen de trabajo o que simplemente no les sales a cuenta. Mientras que un **HandyPerson** puede ser un/una manitas y bien sacarse un sobresueldo o también por que no sin animo de lucro echarle una mano a algún vecino que necesite de ayuda.  
+ 
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Repositorio GitHub 
 
-### Jekyll Themes
+![enter image description here](https://res.cloudinary.com/practicaldev/image/fetch/s--snNDvtg---/c_limit,f_auto,fl_progressive,q_auto,w_880/https://miro.medium.com/max/823/1*uUpzVOpdFw5V-tJ_YvgFmA.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mateu85/VMateu-Entornos-AA-integracion-continua/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
