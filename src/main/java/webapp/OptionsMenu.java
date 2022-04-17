@@ -15,7 +15,7 @@ public class OptionsMenu {
     }
 
     public void mostrarMenu() {
-        //generateTaskList();
+        generateTaskList();
         String option = null;
 
         do {
@@ -123,6 +123,15 @@ public class OptionsMenu {
             System.out.println(task.getDescription());
             System.out.println(task.getLocation());
         }
+    }
+
+    public void generateTaskList() {
+        catalogTasks.add(new Task("El Quijote", "Cervantes", "Anaya"));
+        catalogTasks.add(new Task("Java desde cero", "asd", "Anaya"));
+        catalogTasks.add(new Task("Cómo aprobar Java", "asd", "Anaya"));
+        catalogTasks.add(new Task("Java", "asda", "asd"));
+        catalogTasks.add(new Task("Las aventuras de", "asd", "asd"));
+        catalogTasks.add(new Task("Zipi y Zape", "asd", "asd"));
     }
 
 
